@@ -1,0 +1,43 @@
+
+.board {
+    height: 300px;
+    width: 500px;
+    border-radius: 10px;
+    border: 70px solid red;
+    background-color: transparent;
+    margin: 0 auto;
+}
+
+.text-box {
+    position: relative;
+    height: 302px;
+    width: 502px;
+    left: -2px;
+    top: -2px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background-color: gray;
+    z-index: 1;
+}
+
+#knob-one {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    background-color: black;
+    
+    top: 0;
+    left: -60px;
+}
+
+#knob-two {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    background-color: black;
+    
+    top: -60px;
+    left: 500px;
+}
