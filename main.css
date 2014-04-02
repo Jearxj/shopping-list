@@ -1,23 +1,29 @@
 
 .board {
-    height: 300px;
-    width: 500px;
-    border-radius: 10px;
-    border: 70px solid red;
-    background-color: transparent;
+    height: 440px;
+    width: 640px;
+    border-radius: 7px;
+    background-color: #E60000;
     margin: 0 auto;
+    margin-top: 100px;
+}
+
+.board h3 {
+    text-align: center;
+    padding-top: 20px;
 }
 
 .text-box {
     position: relative;
-    height: 302px;
-    width: 502px;
-    left: -2px;
-    top: -2px;
+    height: 300px;
+    width: 500px;
+    top: -30px;
     border-radius: 5px;
-    border: 1px solid gray;
-    background-color: gray;
+    border: 1px solid #808080;
+    box-shadow: 1px 1px 5px #808080;
+    background-color: #B8B8B8;
     z-index: 1;
+    margin: 0 auto;
 }
 
 #knob-one {
@@ -27,8 +33,9 @@
     border-radius: 30px;
     background-color: black;
     
-    top: 0;
-    left: -60px;
+    display: inline-block;
+    top: -25px;
+    left: 10px;
 }
 
 #knob-two {
@@ -38,6 +45,45 @@
     border-radius: 30px;
     background-color: black;
     
-    top: -60px;
-    left: 500px;
+    display: inline-block;
+    top: -25px;
+    left: 505px;
+}
+
+#items-input {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 60px;
+    padding-bottom: 5px;
+    border: 2px dashed #4C4C4C;
+    text-align: center;
+    background-color: #B8B8B8;
+    outline: none;
+    overflow: auto;
+}
+
+#items-input::-webkit-input-placeholder {
+    color: #4C4C4C;
+    font-size: 14px;
+}
+
+#items-input:-moz-placeholder {
+    color: #4C4C4C;
+    font-size: 14px;
+}
+
+#items-input::-moz-placeholder {
+    color: #4C4C4C;
+    font-size: 14px;
+}
+
+#items-input:-ms-placeholder {
+    color: #4C4C4C;
+    font-size: 14px;
+}
+
+#bottom-text {
+    text-align: center;
+    position: relative;
+    top: 335px;
 }
