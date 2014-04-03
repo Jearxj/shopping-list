@@ -6,6 +6,7 @@
     background-color: #E60000;
     margin: 0 auto;
     margin-top: 100px;
+    box-shadow: 2px 2px 5px 2px #B20000;
 }
 
 .board h3 {
@@ -24,6 +25,7 @@
     background-color: #B8B8B8;
     z-index: 1;
     margin: 0 auto;
+    overflow: auto;
 }
 
 #knob-one {
@@ -50,12 +52,13 @@
     left: 505px;
 }
 
+/*
 #items-input {
     position: absolute;
     margin-top: 20px;
     margin-left: 60px;
     padding-bottom: 5px;
-    border: 2px dashed #4C4C4C;
+    border: 2px solid #4C4C4C;
     text-align: center;
     background-color: #B8B8B8;
     outline: none;
@@ -80,6 +83,38 @@
 #items-input:-ms-placeholder {
     color: #4C4C4C;
     font-size: 14px;
+}
+*/
+
+#input-items {
+    position: relative;
+    width: 350px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
+    border: 2px solid #4C4C4C;
+    text-align: center;
+    color: #4C4C4C;
+    background-color: #B8B8B8;
+    overflow: auto;
+}
+
+.items {
+    position: relative;
+    margin: 60px;
+    margin-top: 0;
+    padding-left: 15px;
+    display: block;
+    /*border: 2px solid #4C4C4C;*/
+}
+
+.items p {
+    color: #4C4C4C;
+}
+
+#crossout {
+    text-decoration: line-through;
 }
 
 #bottom-text {
