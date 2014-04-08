@@ -1,16 +1,15 @@
 $(document).ready(function () {
-    var is_text_in = false;
+    var is_text_in = [0];
     $('.text-board').on('keypress', function(event) {
         console.log("this is working");
-        var item = $(this).val();
+        var item = $('input').val();
         if (event.which == 13) {
             console.log("enter key");
             event.preventDefault();
-            if (is_text_in = true) {
+            if (is_text_in.length === 1) {
                 console.log("true");
-                $('.text-board').append(item);
+                $('.items').append('<p>'+item+'</p>').css({"font-family":"Electrolize","color":"#4C4C4C"});
             } 
-                // if there is no text in the input
             else {
                 console.log("false");
                 alert("Please type in an item!");
@@ -18,5 +17,3 @@ $(document).ready(function () {
         }
     })
 });
-
-//**the computer is saying that there is no text in the input 
