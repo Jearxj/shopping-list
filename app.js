@@ -7,7 +7,8 @@ $(document).ready(function () {
             event.preventDefault();
             if (item.length >= 1) {
                 console.log("true");
-                $('.items').append('<p>'+item+'</p>').css({"font-family":"Electrolize","color":"#4C4C4C"});
+                $('.items').append('<p>'+item+'</p>');
+                $('input').val('');
             } 
             else {
                 console.log("false");
