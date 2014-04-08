@@ -6,22 +6,71 @@ h1 {
     font-size: 50px;
 }
 
+input {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    width: 350px;
+    padding: 4px;
+    font-family: 'Electrolize', sans-serif;
+    font-size: 15px;
+    background-color: #B8B8B8;
+    border: 2px solid #4C4C4C;
+}
+
+input::-webkit-input-placeholder {
+    color: #4C4C4C;
+}
+
+input:-moz-placeholder {
+    color: #4C4C4C;
+}
+
+input::-moz-placeholder {
+    color: #4C4C4C;
+}
+
+input:-ms-placeholder {
+    color: #4C4C4C;
+}
+
 .board {
     height: 440px;
     width: 640px;
     border-radius: 7px;
     background-color: #E60000;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 40px;
     box-shadow: 2px 2px 5px 2px #B20000;
 }
 
-.board h3 {
-    text-align: center;
-    padding-top: 20px;
+#magic {
+    position: absolute;
+    font-family: 'Fugaz One', cursive;
+    font-size: 14px;
+    margin-left: 170px;
+    margin-top: 25px;
 }
 
-.text-box {
+#brand {
+    text-align: center;
+    padding-top: 15px;
+    font-family: 'Arizonia', cursive;
+    font-size: 30px;
+    margin: 0 auto;
+}
+
+#screen {
+    position: absolute;
+    font-family: 'Fugaz One', cursive;
+    font-size: 14px;
+    margin-left: 430px;
+    margin-top: -27px;
+}
+
+.text-board {
     position: relative;
     height: 300px;
     width: 500px;
@@ -36,62 +85,26 @@ h1 {
 }
 
 #knob-one {
-    position: relative;
+    position: absolute;
     height: 60px;
     width: 60px;
     border-radius: 30px;
     background-color: black;
     
-    display: inline-block;
-    top: -25px;
-    left: 10px;
+    margin-top: -30px;
+    margin-left: 10px;
 }
 
 #knob-two {
-    position: relative;
+    position: absolute;
     height: 60px;
     width: 60px;
     border-radius: 30px;
     background-color: black;
     
-    display: inline-block;
-    top: -25px;
-    left: 505px;
+    margin-top: -30px;
+    margin-left: 570px;
 }
-
-/*
-#items-input {
-    position: absolute;
-    margin-top: 20px;
-    margin-left: 60px;
-    padding-bottom: 5px;
-    border: 2px solid #4C4C4C;
-    text-align: center;
-    background-color: #B8B8B8;
-    outline: none;
-    overflow: auto;
-}
-
-#items-input::-webkit-input-placeholder {
-    color: #4C4C4C;
-    font-size: 14px;
-}
-
-#items-input:-moz-placeholder {
-    color: #4C4C4C;
-    font-size: 14px;
-}
-
-#items-input::-moz-placeholder {
-    color: #4C4C4C;
-    font-size: 14px;
-}
-
-#items-input:-ms-placeholder {
-    color: #4C4C4C;
-    font-size: 14px;
-}
-*/
 
 #input-items {
     position: relative;
