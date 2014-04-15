@@ -1,3 +1,11 @@
+body {
+    background: url(plain-bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 h1 {
     position: relative;
     text-align: center;
@@ -36,6 +44,10 @@ input:-ms-placeholder {
     color: #4C4C4C;
 }
 
+input:focus {
+    outline: none;
+}
+
 .board {
     height: 440px;
     width: 640px;
@@ -43,13 +55,14 @@ input:-ms-placeholder {
     background-color: #E60000;
     margin: 0 auto;
     margin-top: 40px;
-    box-shadow: 2px 2px 5px 2px #B20000;
+    box-shadow: 5px -5px 5px 2px /*#B80000*/ #660000;
 }
 
 #magic {
     position: absolute;
     font-family: 'Fugaz One', cursive;
     font-size: 14px;
+    color: #FFCC00;
     margin-left: 170px;
     margin-top: 25px;
 }
@@ -59,6 +72,7 @@ input:-ms-placeholder {
     padding-top: 15px;
     font-family: 'Arizonia', cursive;
     font-size: 30px;
+    color: #FFCC00;
     margin: 0 auto;
 }
 
@@ -66,6 +80,7 @@ input:-ms-placeholder {
     position: absolute;
     font-family: 'Fugaz One', cursive;
     font-size: 14px;
+    color: #FFCC00;
     margin-left: 430px;
     margin-top: -27px;
 }
@@ -89,7 +104,8 @@ input:-ms-placeholder {
     height: 60px;
     width: 60px;
     border-radius: 30px;
-    background-color: black;
+    background-color: #FFFFFF;
+    box-shadow: 4px -4px #E6E6E6;
     
     margin-top: -30px;
     margin-left: 10px;
@@ -100,7 +116,8 @@ input:-ms-placeholder {
     height: 60px;
     width: 60px;
     border-radius: 30px;
-    background-color: black;
+    background-color: #FFFFFF;
+    box-shadow: -4px -4px #E6E6E6;
     
     margin-top: -30px;
     margin-left: 570px;
@@ -128,6 +145,8 @@ input:-ms-placeholder {
     margin-top: 0;
     padding-left: 15px;
     display: block;
+    font-family: 'Electrolize', sans-serif;
+    color: #4C4C4C;
     /*border: 2px solid #4C4C4C;*/
 }
 
@@ -135,6 +154,8 @@ input:-ms-placeholder {
     /*font-family: 'Orbitron', sans-serif;*/
     font-family: 'Electrolize', sans-serif;
     color: #4C4C4C;
+    display: block;
+    cursor: crosshair;
 }
 
 .crossout {
@@ -142,6 +163,8 @@ input:-ms-placeholder {
 }
 
 #bottom-text {
+    font-family: 'Orbitron', sans-serif;
+    color: #FFCC00;
     text-align: center;
     position: relative;
     top: 335px;
