@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $('#knob-two').click(function() {
-    $( '.board' ).effect( 'shake' );
+        $( '.board' ).effect( 'shake' );
         $('.items').empty('p');
     });
     $('.text-board').on('keypress', function(event) {
@@ -26,7 +26,12 @@ $(document).ready(function () {
         console.log('crossout');
         $(this).toggleClass('crossout');
     })
-    .on('dblclick', 'p', function() {
-        $(this).remove();
+    //.on('dblclick', 'p', function() {
+        //$(this).remove();
+    //});
+    $('#knob-one').click(function() {
+        $('.items').on('click', 'p', function() {
+            $(this).remove();
+        })
     });
 });
