@@ -1,8 +1,4 @@
 $(document).ready(function () {
-    $('#knob-two').click(function() {
-        $( '.board' ).effect( 'shake' );
-        $('.items').empty('p');
-    });
     $('.text-board').on('keypress', function(event) {
         console.log("this is working");
         var item = $('input').val();
@@ -21,17 +17,19 @@ $(document).ready(function () {
         } else {
             $('.items p:first').text(item);
         }
-    });
+    })
     $('.items').on('click', 'p', function() {
         console.log('crossout');
         $(this).toggleClass('crossout');
     })
-    //.on('dblclick', 'p', function() {
-        //$(this).remove();
-    //});
     $('#knob-one').click(function() {
+        console.log('knob-one clicked');
         $('.items').on('click', 'p', function() {
-            $(this).remove();
-        })
-    });
+            $(this).toggle();
+        }) 
+    })
+    $('#knob-two').click(function() {
+        $( '.board' ).effect( 'shake' );
+        $('.items').empty('p');
+    })
 });
