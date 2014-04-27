@@ -1,35 +1,45 @@
 $(document).ready(function () {
-    $('.text-board').on('keypress', function(event) {
+    //
+    $('#form-one').on('submit', function(event) {
+        event.preventDefault();
+    })
+    $('.text-board').on('keyup', function(event) {
         console.log("this is working");
         var item = $('input').val();
-        if (event.keyCode === 13) {
+        if (event.which === 13) {
             console.log("enter key");
             event.preventDefault();
             if (item.length >= 1) {
                 console.log("true");
-                $('.items').append('<p>'+item+'</p>');
+                $('.items').append('<p></p>');
                 $('input').val('');
-            } 
-            else {
+            } else {
                 console.log("false");
                 alert("Please type in an item!");
             }
         } else {
-            $('.items p:first').text(item);
+            $('.items p:last').text(item);
         }
+    })
+    .on('keydown', function(event) {
+        if (event.keyCode === 46) {
+        console.log("BUG finish me");
+        }   
     })
     $('.items').on('click', 'p', function() {
         console.log('crossout');
         $(this).toggleClass('crossout');
     })
-    $('#knob-one').click(function() {
+    $('#knob-left').click(function() {
+        event.preventDefault();
         console.log('knob-one clicked');
         $('.items').on('click', 'p', function() {
             $(this).toggle();
         }) 
     })
-    $('#knob-two').click(function() {
-        $( '.board' ).effect( 'shake' );
-        $('.items').empty('p');
-    })
+    $('#knob-right').click(function() {
+        $('.board').effect('shake');
+        $('.items').empty();
+        $('.items').append('<p></p>');
+    });
 });
