@@ -21,11 +21,6 @@ $(document).ready(function () {
             $('.items p:last').text(item);
         }
     })
-    .on('keydown', function(event) {
-        if (event.keyCode === 46) {
-        console.log("BUG finish me");
-        }   
-    })
     $('.items').on('click', 'p', function() {
         console.log('crossout');
         $(this).toggleClass('crossout');
