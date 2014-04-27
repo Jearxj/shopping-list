@@ -162,6 +162,30 @@ input:focus {
     text-decoration: line-through;
 }
 
+.glow {
+    animation: deleteOn 5000s infinite;
+    -webkit-animation: deleteOn 5000s infinite;
+    -moz-animation: deleteOn 5000s infinite;
+}
+
+@keyframes deleteOn {
+    0% {
+        background: radial-gradient(circle, #FFFF99 40%, transparent 70%), #FFFF66;
+    }
+}
+
+@-webkit-keyframes deleteOn {
+    0% {
+    background: radial-gradient(circle, #FFFF99 40%, transparent 70%), #FFFF66;
+    }
+}
+
+@-moz-keyframes deleteOn {
+    0% {
+    background: radial-gradient(circle, #FFFF99 40%, transparent 70%), #FFFF66;
+    }
+}
+
 #bottom-text {
     font-family: 'Orbitron', sans-serif;
     color: #FFCC00;

@@ -32,6 +32,9 @@ $(document).ready(function () {
             $(this).toggle();
         }) 
     })
+    .click(function() {
+        $('#knob-left').toggleClass('glow');
+    })
     $('#knob-right').click(function() {
         $('.board').effect('shake');
         $('.items').empty();
