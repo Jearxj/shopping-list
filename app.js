@@ -33,9 +33,10 @@ $(document).ready(function () {
         }) 
     })
     .click(function() {
-        $('#knob-left').toggleClass('glow');
+        $('#knob-left').toggleClass('left-glow');
     })
     $('#knob-right').click(function() {
+        $('#knob-right').addClass('right-glow');
         $('.board').effect('shake');
         $('.items').empty();
         $('.items').append('<p></p>');

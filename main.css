@@ -162,27 +162,51 @@ input:focus {
     text-decoration: line-through;
 }
 
-.glow {
-    animation: deleteOn 5000s infinite;
-    -webkit-animation: deleteOn 5000s infinite;
-    -moz-animation: deleteOn 5000s infinite;
+.left-glow {
+    animation: deleteOn 1s infinite;
+    -webkit-animation: deleteOn 1s infinite;
+    -moz-animation: deleteOn 1s infinite;
 }
 
 @keyframes deleteOn {
     0% {
-        background: radial-gradient(circle, #FFFF99 40%, transparent 70%), #FFFF66;
+        background: radial-gradient(circle, #FFFF66 30%, transparent 70%), #FFFF00;
     }
 }
 
 @-webkit-keyframes deleteOn {
     0% {
-    background: radial-gradient(circle, #FFFF99 40%, transparent 70%), #FFFF66;
+    background: radial-gradient(circle, #FFFF66 30%, transparent 70%), #FFFF00;
     }
 }
 
 @-moz-keyframes deleteOn {
     0% {
-    background: radial-gradient(circle, #FFFF99 40%, transparent 70%), #FFFF66;
+    background: radial-gradient(circle, #FFFF66 30%, transparent 70%), #FFFF00;
+    }
+}
+
+.right-glow {
+    animation: removeAll 1s;
+    -webkit-animation: removeAll 1s;
+    -moz-animation: removeAll 1s;
+}
+
+@keyframes removeAll {
+    0% {
+        background: radial-gradient(circle, #FFFF66 30%, transparent 70%), #FFFF00;
+    }
+}
+
+@-webkit-keyframes removeAll {
+    0% {
+    background: radial-gradient(circle, #FFFF66 30%, transparent 70%), #FFFF00;
+    }
+}
+
+@-moz-keyframes removeAll {
+    0% {
+    background: radial-gradient(circle, #FFFF66 30%, transparent 70%), #FFFF00;
     }
 }
 
